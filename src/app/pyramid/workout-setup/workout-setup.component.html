@@ -1,0 +1,25 @@
+<p>workout-setup works!</p>
+
+<button mat-raised-button color="primary" (click)="goToWorkout()">
+  Do the Pyramid Workout
+</button>
+
+<div *ngIf="afAuth.authState | async as user">
+  <h3>Hi, {{ user.displayName }} 👋</h3>
+  <img src="{{ user.photoURL }}" />
+  <p>UID: {{ user.uid }}</p>
+</div>
+
+<button mat-raised-button color="primary" (click)="setMeUp()">Set me up</button>
+
+<!-- <ul>
+  <li class="text" *ngFor="let user of users | async">
+    {{ user.displayName }}
+  </li>
+</ul>
+
+<mat-list>
+  <mat-list-item class="text" *ngFor="let workout of workouts | async">
+    {{ workout }}
+  </mat-list-item>
+</mat-list> -->

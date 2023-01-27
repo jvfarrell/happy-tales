@@ -1,0 +1,37 @@
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { HomePageComponent } from './home-page/home-page.component';
+import { AuthGuard } from './user/auth.guard';
+import { FacesComponent } from './ventera/faces/faces.component';
+
+const routes: Routes = [
+  { path: '', component: HomePageComponent },
+  { path: 'faces', component: FacesComponent },
+  {
+    path: 'login',
+    loadChildren: () => import('./user/user.module').then((m) => m.UserModule),
+  },
+  {
+    path: 'pyramid',
+    loadChildren: () =>
+      import('./pyramid/pyramid.module').then((m) => m.PyramidModule),
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'kanban',
+    loadChildren: () =>
+      import('./kanban/kanban.module').then((m) => m.KanbanModule),
+    canActivate: [AuthGuard],
+  },
+];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes, {
+      initialNavigation: 'enabled',
+      useHash: true // stops the 404 error from happening when a user refreshes the page (since it's a single page app)
+    }),
+  ],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
