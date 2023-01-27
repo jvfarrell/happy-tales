@@ -13,14 +13,8 @@
     <mat-nav-list>
       <a mat-list-item routerLink="/" (click)="drawer.close()">Home</a>
       <a mat-list-item routerLink="/login" (click)="drawer.close()">Login</a>
-      <a mat-list-item routerLink="/pyramid" (click)="drawer.close()"
-        >Pyramid Workout</a
-      >
-      <a mat-list-item routerLink="/pyramid/demo" (click)="drawer.close()"
-        >Demo Workout</a
-      >
-      <a mat-list-item routerLink="/kanban" (click)="drawer.close()"
-        >Kanban</a
+      <a mat-list-item routerLink="/faces" (click)="drawer.close()"
+        >Our People</a
       >
     </mat-nav-list>
   </mat-sidenav>
@@ -37,13 +31,11 @@
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span class="logo" routerLink="/">⚡ Pyramid Workout</span>
+      <span class="logo" routerLink="/">🐶 Faces of Ventera</span>
 
       <span class="fill-space"></span>
       <div *ngIf="!(isHandset$ | async)">
-        <a mat-button routerLink="/kanban">📃 Kanban</a>
-        <a mat-button routerLink="/pyramid/demo">💪 Demo Workout</a>
-        <a mat-button routerLink="/pyramid/go">⚡ Start Workout</a>
+        <a mat-button routerLink="/faces">😃 Our People</a>
 
         <a mat-button routerLink="/login">🔑 Login</a>
       </div>
@@ -59,9 +51,9 @@
       </button>
 
       <mat-menu #menu="matMenu">
-        <a mat-menu-item href="https://discord.gg/e8EZ2Zd93r">
+        <a mat-menu-item href="https://www.ventera.com">
           <i>💬</i>
-          <span>Chat on Discord</span>
+          <span>Ventera Main site</span>
         </a>
       </mat-menu>
     </mat-toolbar>

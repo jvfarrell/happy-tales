@@ -12,10 +12,9 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
 import { HomePageComponent } from './home-page/home-page.component';
-import { FacesComponent } from './ventera/faces/faces.component';
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, FacesComponent],
+  declarations: [AppComponent, HomePageComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BoardListComponent } from './board-list/board-list.component';
+import { VenteraPeopleComponent } from './ventera-people/ventera-people.component';
 
 const routes: Routes = [
-  { path: '', component: BoardListComponent }
+  { path: '', component: VenteraPeopleComponent }
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class KanbanRoutingModule { }
+export class FacesRoutingModule { }
