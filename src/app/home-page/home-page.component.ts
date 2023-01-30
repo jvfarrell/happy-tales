@@ -7,7 +7,6 @@ import { MatCardModule } from '@angular/material/card';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {

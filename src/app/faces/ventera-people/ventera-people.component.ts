@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { ImageListItem } from './image-list-item';
+import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { ImageListItem } from '../../models/image-list-item';
 import { MatCardModule } from '@angular/material/card';
+
 //https://stackblitz.com/edit/angular-material-image-list?file=src%2Fapp%2Fapp.module.ts
 
 @Component({
@@ -10,7 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class VenteraPeopleComponent implements OnInit {
 
-  cards = [
+  images = [
     {
       name: "Noble Ackerson",
       title: "",
@@ -265,9 +266,29 @@ export class VenteraPeopleComponent implements OnInit {
     },
 
   ];
+
+
   constructor() { }
 
+  //random shuffle of array https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj
+  shuffleArray = array => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+}
+
   ngOnInit(): void {
+    this.shuffleArray(this.images);
+  }
+
+    @Output()
+  click = new EventEmitter<void>();
+
+  onImageListItemClick(imageListItem: ImageListItem) {
+    this.click.emit();
   }
 
 }

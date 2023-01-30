@@ -13,8 +13,11 @@
     <mat-nav-list>
       <a mat-list-item routerLink="/" (click)="drawer.close()">Home</a>
       <a mat-list-item routerLink="/login" (click)="drawer.close()">Login</a>
-      <a mat-list-item routerLink="/faces" (click)="drawer.close()"
+      <a mat-list-item routerLink="/ourPeople" (click)="drawer.close()"
         >Our People</a
+      >
+      <a mat-list-item routerLink="/ourPeople/faces" (click)="drawer.close()"
+        >Faces</a
       >
     </mat-nav-list>
   </mat-sidenav>
@@ -35,8 +38,8 @@
 
       <span class="fill-space"></span>
       <div *ngIf="!(isHandset$ | async)">
-        <a mat-button routerLink="/faces">😃 Our People</a>
-
+        <a mat-button routerLink="/ourPeople">😃 Our People</a>
+        <a mat-button routerLink="/ourPeople/faces">Faces</a>
         <a mat-button routerLink="/login">🔑 Login</a>
       </div>
 

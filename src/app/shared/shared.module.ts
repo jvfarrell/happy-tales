@@ -18,6 +18,7 @@ import { MatOptionModule } from '@angular/material/core';
 
 import { ShellComponent } from './shell/shell.component';
 import { DeleteButtonComponent } from './delete-button/delete-button.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 const components = [ShellComponent, DeleteButtonComponent];
 
@@ -38,6 +39,7 @@ const modules = [
   RouterModule,
   MatStepperModule,
   MatOptionModule,
+  MatGridListModule
 ];
 
 @NgModule({
