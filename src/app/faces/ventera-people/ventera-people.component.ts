@@ -14,7 +14,7 @@ export class VenteraPeopleComponent implements OnInit {
   images = [
     {
       name: "Noble Ackerson",
-      title: "",
+      title: "Director of Product Management (AI/ML Solutions)",
       src: "../../../assets/headshots/Ackerson_Noble.jpeg"
     },
     {
@@ -64,7 +64,7 @@ export class VenteraPeopleComponent implements OnInit {
     },
     {
           name: "Doug Bullard",
-    title: "",
+    title: "Senior Vice President, Business Services",
     src: "../../../assets/headshots/Bullard_Doug.jpg"
     },
     {
@@ -74,12 +74,12 @@ export class VenteraPeopleComponent implements OnInit {
     },
     {
           name: "Dave Fitch",
-    title: "",
+    title: "Chief Information Security Officer",
     src: "../../../assets/headshots/Fitch_Dave.jpg"
     },
     {
           name: "Chris Ford",
-    title: "",
+    title: "Executive Vice President, Business Services",
     src: "../../../assets/headshots/Ford_Chris.png"
     },
     {
@@ -136,7 +136,7 @@ export class VenteraPeopleComponent implements OnInit {
     },
     {
           name: "Joe McMahon",
-    title: "",
+    title: "Executive Vice President, Business Services",
     src: "../../../assets/headshots/McMahon_Joe.jpeg"
     },
     {
@@ -156,7 +156,7 @@ export class VenteraPeopleComponent implements OnInit {
     },
     {
           name: "Praveen Nedungottil",
-    title: "",
+    title: "Executive Vice President, Solutions Delivery",
     src: "../../../assets/headshots/Nedungottil_Praveen.png"
     },
     {
@@ -186,7 +186,7 @@ export class VenteraPeopleComponent implements OnInit {
     },
     {
           name: "Christina Pritchett",
-    title: "",
+    title: "Vice President, Human Capital Management",
     src: "../../../assets/headshots/Pritchett_Christina.jpeg"
     },
     {
@@ -196,7 +196,7 @@ export class VenteraPeopleComponent implements OnInit {
     },
     {
           name: "Sean Lajoie",
-    title: "",
+    title: "Senior Digital Marketing Associate",
     src: "../../../assets/headshots/Lajoie_Sean.JPG"
     },
     {
@@ -206,7 +206,7 @@ export class VenteraPeopleComponent implements OnInit {
     },
     {
           name: "Hugh Shaw",
-    title: "",
+    title: "Chief Financial Officer",
     src: "../../../assets/headshots/Shaw_Hugh.jpg"
     },
     {
@@ -216,12 +216,12 @@ export class VenteraPeopleComponent implements OnInit {
     },
     {
           name: "Jeff Smith",
-    title: "",
+    title: "Executive Vice President, Government Services",
     src: "../../../assets/headshots/Smith_Jeff.jpg"
     },
     {
           name: "Stephanie Gonthier",
-    title: "",
+    title: "Senior Consultant",
     src: "../../../assets/headshots/Gonthier_Stephanie.jpeg"
     },
     {
@@ -236,7 +236,7 @@ export class VenteraPeopleComponent implements OnInit {
     },
     {
           name: "Jim Surguine",
-    title: "",
+    title: "Project Manager",
     src: "../../../assets/headshots/Surguine_Jim.png"
     },
     {
@@ -246,7 +246,7 @@ export class VenteraPeopleComponent implements OnInit {
     },
     {
           name: "Trevor Dowd",
-    title: "",
+    title: "Consultant",
     src: "../../../assets/headshots/Dowd_Trevor.PNG"
     },
     {
@@ -264,6 +264,11 @@ export class VenteraPeopleComponent implements OnInit {
     title: "",
     src: "../../../assets/headshots/Ungerleider_Peter.png"
     },
+    {
+      name: "Victor Farrell",
+      title: "Senior Consultant",
+      src: "../../../assets/headshots/Farrell_Victor.jpg"
+    }
 
   ];
 
