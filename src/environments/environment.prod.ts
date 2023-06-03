@@ -1,12 +1,12 @@
 export const environment = {
   production: true,
   firebase: {
-    apiKey: "AIzaSyASnnFAwkkr08llwnxVpdgJdyBy-8KH-dw",
-    authDomain: "faces-of-ventera.firebaseapp.com",
-    projectId: "faces-of-ventera",
-    storageBucket: "faces-of-ventera.appspot.com",
-    messagingSenderId: "429894599292",
-    appId: "1:429894599292:web:6e65f3ddf47de7c09f7ff9",
-    measurementId: "G-7WJPX90J1B"
+    apiKey: "AIzaSyA75SO5AK9iGGltPi353-HwW1cA0j3WuPg",
+    authDomain: "happy-tales-vic.firebaseapp.com",
+    projectId: "happy-tales-vic",
+    storageBucket: "happy-tales-vic.appspot.com",
+    messagingSenderId: "246873167916",
+    appId: "1:246873167916:web:bdd1a479473e29507b1989",
+    measurementId: "G-6Q63PERRSN"
   },
 };

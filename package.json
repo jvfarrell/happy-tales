@@ -1,6 +1,9 @@
 {
-  "name": "faces-of-ventera",
+  "name": "happy-tales",
   "version": "0.0.0",
+  "description": "happy tales tours",
+  "license": "ISC",
+  "author": "Victor Farrell",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
