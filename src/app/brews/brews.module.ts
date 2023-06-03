@@ -5,12 +5,14 @@ import { BrewsRoutingModule } from './brews-routing.module';
 import { BreweryComponent } from './brewery/brewery.component';
 import { RulesComponent } from './rules/rules.component';
 import { SharedModule } from '../shared/shared.module';
+import { TourComponent } from './tour/tour.component';
 
 
 @NgModule({
   declarations: [
     BreweryComponent,
-    RulesComponent
+    RulesComponent,
+    TourComponent
   ],
   imports: [
     CommonModule,
