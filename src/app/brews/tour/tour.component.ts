@@ -12,10 +12,8 @@ export class TourComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
-
-
   ngOnInit(): void {
-    this.route.queryParams
+    this.route.params
       .subscribe(params => {
         console.log(params); // { tourStop: "price" }
         this.tourStop = params['tourStop'];

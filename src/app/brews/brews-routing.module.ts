@@ -8,7 +8,8 @@ const routes: Routes = [
   { path: '', component: RulesComponent },
   { path: 'start', component: BreweryComponent },
   { path: 'all', component:BreweryComponent},
-  { path: 'tour', component:TourComponent}
+  { path: 'tour', component:RulesComponent},
+  { path: 'tour/:tourStop', component:TourComponent}
 ];
 
 @NgModule({
